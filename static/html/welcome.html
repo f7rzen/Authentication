@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+<div class="wrapper">
+    <h1>Welcome, <span id="username"></span></h1>
+</div>
+
+<script>
+    // Получение имени пользователя из параметров URL
+    const params = new URLSearchParams(window.location.search);
+    const username = params.get('name');
+    document.getElementById('username').textContent = username;
+</script>
+</body>
+</html>
