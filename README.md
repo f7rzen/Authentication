@@ -15,7 +15,7 @@ git clone https://github.com/f7rzen/Authentication.git
 2. Перейдите в директорию проекта:
 
 ```bash
-cd authentication]
+cd Authentication
 ```
 
 3. Настройте базу данных PostgreSQL в файле main.go:
@@ -24,7 +24,7 @@ cd authentication]
 connStr := "user=postgres password=yourpassword dbname=users sslmode=disable"
 ```
 
-4. Установка зависимостей
+4. Установите зависимости
 
 ```bash
 go mod tidy
